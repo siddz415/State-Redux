@@ -7,15 +7,11 @@ import {
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
-
 function CategoryMenu() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
-
   const { categories } = state;
-
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
-
   useEffect(() => {
     if (categoryData) {
       dispatch({
@@ -34,18 +30,16 @@ function CategoryMenu() {
       });
     }
   }, [categoryData, loading, dispatch]);
-
   const handleClick = (id) => {
     dispatch({
       type: UPDATE_CURRENT_CATEGORY,
       currentCategory: id,
     });
   };
-
   return (
     <div>
       <h2>Choose a Category:</h2>
-      {categories.map((item) => (
+      {categories?.map((item) => (
         <button
           key={item._id}
           onClick={() => {
@@ -58,5 +52,11 @@ function CategoryMenu() {
     </div>
   );
 }
-
 export default CategoryMenu;
+
+
+
+
+
+
+
