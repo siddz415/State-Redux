@@ -19,6 +19,8 @@ Refactor a fully operational RESTful Google Books API search engine into a Graph
 * Node.js
 * React- Router-Dom
 * NPM Packages
+* NPM Stripe package
+* React-router-dom
 
 
 ### Gif
@@ -26,7 +28,7 @@ Refactor a fully operational RESTful Google Books API search engine into a Graph
 
 ### links
 # github
-# https://github.com/siddz415/Book-Finder
+# https://github.com/siddz415/State-Redux
 
 # Heroku
-# https://bookfinderr.herokuapp.com/
+# https://redux-state.herokuapp.com/
