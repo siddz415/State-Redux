@@ -8,7 +8,7 @@
 
 
 ### Description
-Refactor a fully operational RESTful Google Books API search engine into a GraphQL API created using Apollo Server. With a React front end, a MongoDB database, a Node.js/Express.js server, and an Express.js API, the initial project was created utilizing the MERN stack. Users could already save book searches to the back end thanks to the configuration.
+refactor the e-commerce platform from Activity 26Links to an external site. so that it uses ReduxLinks to an external site. I made sweeping changes to the code, after i read through the Redux documentation on my own to find the information i need.
 
 
 ### Installation
